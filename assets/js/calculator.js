@@ -75,14 +75,26 @@ function Square(){
 }
     
 ;(function(){
-    console.log(add())
-    console.log(multilpay())
-    console.log(subtraction())
-    console.log(division())
-    console.log(maximum())
-    console.log(minimum())
-    console.log(Square())
-    console.log(Average())
+    if(option == 1){
+        console.log(add())
+    }else if(option==2){
+        console.log(subtraction())
+    }else if(option==3){
+        console.log(multilpay())
+    }else if(option==4){
+        console.log(division())
+    }else if(option==5){
+        console.log(maximum())
+    }else if(option==6){
+        console.log(minimum())
+    }else if(option==7){
+        console.log(Average())
+    }else if(option==8){
+        console.log(Square())
+    }else{
+        console.log("you didn't choose in range")
+    } 
+    
 })();
 
 

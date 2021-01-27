@@ -29,5 +29,5 @@ if(BMI < 18){
     decision = ""
 }
 (function(){
-    console.log("BMI is: " + BMI + decision) 
+    console.log("BMI is: " + BMI +" " + decision) 
 })()
