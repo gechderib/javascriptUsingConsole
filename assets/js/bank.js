@@ -6,13 +6,13 @@
          var inpuAmount = prompt("Enter your amount of input:")
          dipos = dipos + parseInt(inpuAmount)
      }
-     return "your input is succed: " + dipos
+     return "your input is succed: " + parseInt(inpuAmount) + "\nYour current balance is:" + dipos
  }
  function Withdrawal(){
      if(choose == 2){
          var outputAmount = prompt("Enter your amount of output:")
          if(dipos > 50 && outputAmount < dipos){
-            dipos = "Operation successful\nyour remaning balance is " +Number(dipos - outputAmount) 
+            dipos = "Operation successful withdrawal:" + Number(outputAmount) + "\nYour remaning balance is " +Number(dipos - outputAmount) 
          }else{
              dipos = "your balance in insufficaint"
          }
@@ -43,8 +43,15 @@
 //  console.log(diposit())
 //  console.log(Withdrawal())
  ;(function(){
-     console.log(diposit())
-     console.log(Withdrawal())
-     console.log(balance())
-     console.log(Transfer())
+     if(choose==1){
+        console.log(diposit())
+     }else if(choose == 2){
+        console.log(Withdrawal())
+     }else if(choose == 3){
+        console.log(balance())
+     }else if(choose==4){
+        console.log(Transfer())
+     }else{
+         console.log("incorrect choose\nYour choose must be in range 1 to 4 both inclusive")
+     }  
  }());
