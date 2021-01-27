@@ -43,6 +43,17 @@ function division(){
         return decision
     }
 }
+// function add() {
+//     if(option == 1){
+//         var operationNumber = prompt("how many number you wanna operate?")
+//         
+//         for(let i = 0; i < parseInt(operationNumber);i++){
+//             numbers[i] = prompt("Enter number " +(i + 1))
+//             sum = sum + parseInt(numbers[i])
+//         }
+//         return sum
+//     }
+// }
 function maximum(){
     if(option == 5){
         var num1 = prompt("Enter first number");

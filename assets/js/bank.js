@@ -52,6 +52,6 @@
      }else if(choose==4){
         console.log(Transfer())
      }else{
-         console.log("incorrect choose\nYour choose must be in range 1 to 4 both inclusive")
+         console.log("incorrect choose\nYour choose must be in range 1 to 4 both Inclusive")
      }  
  }());
